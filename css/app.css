@@ -1,10 +1,36 @@
-body{
-	color:#666;
+body {
+	color: #666;
 }
-article{
-	
-	width:700px;
-	margin:100px auto;
+
+article {
+	width: 700px;
+	margin: 100px auto;
 }
 
 
+/*动画*/
+
+.photo {
+	border-radius: 50%;
+	/*border: 10px solid;
+	border-left-color: red;
+	border-right-color: black;
+	border-top-color: yellow;
+	border-bottom-color: green;*/
+	width: 100px;
+	height: 100px;
+}
+
+.photo:hover {
+	-webkit-animation: circle 1s infinite linear;
+	/*匀速 循环*/
+}
+
+@-webkit-keyframes circle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
