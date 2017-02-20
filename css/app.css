@@ -10,7 +10,6 @@ article {
 
 /*动画*/
 
-
 .photo {
 	border-radius: 50%;
 	/*border: 10px solid;
@@ -24,10 +23,40 @@ article {
 
 .photo:hover {
 	-webkit-animation: circle 1s infinite linear;
+	-mos-animation: circle 1s infinite linear;
+	-ms-animation: circle 1s infinite linear;
+	animation: circle 1s infinite linear;
 	/*匀速 循环*/
 }
 
 @-webkit-keyframes circle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes circle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes circle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes circle {
 	0% {
 		transform: rotate(0deg);
 	}
