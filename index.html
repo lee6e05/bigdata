@@ -1,16 +1,27 @@
 <!doctype html>
-<html>
-
+<html data-ng-app="app">
+aaaa
 <head>
-    <title>个人空间</title>
+    <title>lee6e05</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body ng-app="app" >
+<body>
 
-    <div class="container" id="appCtrl" ng-controller="appCtrl">
+    <div class="container" data-ng-controller="appCtrl">
+        <div class="col-md-4" ng-repeat="x in names" ng-style="{ 
+            'padding':'10px'
+        }">
+            <div ng-style="{
+             'color':'red',
+              'padding':'10px',
+             'text-align':'center',
+             'background':'rgb(244,244,90)'
+         }"> {{x|date:'yyyy-MM-dd'}} </div>
+        </div>
+
 
     </div>
 
@@ -19,6 +30,13 @@
     <script src="js/angular.min.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/app.js"></script>
+    <!--配置文件-->
+    <!--<script src="js/config.js"></script>-->
+    <!--延迟加载-->
+    <!--<script src="js/config.lazyload.js"></script>-->
+    <!--路由-->
+    <!--<script src="js/config.router.js"></script>-->
+
 
 </body>
 
